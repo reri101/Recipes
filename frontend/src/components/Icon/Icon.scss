@@ -1,0 +1,35 @@
+.icon {
+  cursor: pointer;
+  color: #616161;
+
+  &.header {
+    margin-right: 5px;
+  }
+
+  &.settings {
+    width: 18px;
+    height: 18px;
+  }
+
+  &.error {
+    color: #ff4d4f;
+  }
+
+  &.password {
+    width: 18px;
+    height: 18px;
+  }
+  
+  &.options {
+    color: #e7e7e7;
+  }
+
+  &.error {
+    color: #ff4d4f;
+  }
+
+  &.password {
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -1,0 +1,126 @@
+.table-container {
+  width: auto;
+  height: auto;
+  overflow-x: auto;
+  .wrapper {
+    overflow-x: auto;
+    table {
+      width: 100%;
+      color: #797979;
+      border: none;
+      border-collapse: collapse;
+
+      thead {
+        background-color: #f5f5f5;
+      }
+
+      tbody,
+      thead {
+        width: 100%;
+
+        tr {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0 1rem;
+          gap: 2rem;
+        }
+      }
+
+      th,
+      td {
+        padding: 10px;
+        font-size: 1rem;
+        text-align: left;
+        display: flex;
+        align-items: center;
+
+        &.align-left {
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: 0;
+        }
+
+        &.align-right {
+          flex-grow: 0;
+          flex-shrink: 0;
+          width: 80px;
+        }
+      }
+
+      td {
+        display: flex;
+        align-items: center;
+
+        &.align-right {
+          color: #dddddd;
+        }
+
+        .options {
+          text-align: center;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+        }
+      }
+    }
+  }
+}
+
+.ingredients-table {
+  border: 1px solid #dfdfdf;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  border: 1px solid #dfdfdf;
+  border-radius: 0.4rem;
+  width: 80%;
+  overflow: hidden;
+
+  .wrapper {
+    table {
+      border-collapse: collapse;
+
+      tbody,
+      thead {
+        tr {
+          gap: 0;
+        }
+      }
+
+      thead {
+        background-color: white;
+        border-bottom: 1px solid #dfdfdf;
+        border-top-right-radius: 0.4rem;
+        border-top-left-radius: 0.4rem;
+
+        th {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  tbody {
+    border-bottom: 1px solid #dfdfdf;
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f0f0f0;
+
+    }
+  }
+
+  .add-new {
+    background-color: white;
+    color: #797979;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,46 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+
+  .content {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    text-align: left;
+    border: 1px solid #c4c4c4;
+
+    .header {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      padding: 0 1.5rem;
+      font-weight: normal;
+    }
+
+    .confirmation-text {
+      border-top: 1px solid #c4c4c4;
+      border-bottom: 1px solid #c4c4c4;
+      padding: 1.5rem;
+      font-size: 1rem;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: end;
+      gap: 1rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}

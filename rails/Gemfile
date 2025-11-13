@@ -1,0 +1,30 @@
+source 'https://rubygems.org'
+ruby '3.2.2'
+gem 'pg'
+gem 'rails', '7.0.8'
+gem 'puma', '6.4.2'
+gem 'jbuilder', '2.10.0'
+gem 'bootsnap', '1.18.3', require: false
+gem 'rack-cors'
+gem 'annotate'
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+group :development do
+  gem 'listen', '3.8.0'
+  gem 'spring'
+  gem 'spring-watcher-listen', '2.1.0'
+end
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'active_storage_validations'
+
+gem 'devise'
+gem 'devise-jwt', '0.10.0'
+gem 'cancancan'
+
+group :test do
+  gem 'rspec-rails'
+  gem 'database_cleaner-active_record'
+end
+

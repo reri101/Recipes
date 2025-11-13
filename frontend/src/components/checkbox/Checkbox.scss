@@ -1,0 +1,29 @@
+.checkbox {
+  margin: auto 0;
+  .input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid #dbdbdb;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    margin: auto 0;
+  }
+
+  .input:checked {
+    background-color: #9b88df;
+    border-color: #9b88df;
+  }
+
+  .input:checked:before {
+    content: "\2713";
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

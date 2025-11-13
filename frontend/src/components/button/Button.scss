@@ -1,0 +1,80 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &.settings {
+    background-color: #f3f3f3;
+    color: #616161;
+    border: 1px solid #ccc;
+    margin-right: 1rem;
+
+    &:hover {
+      background-color: #e9e9e9;
+    }
+
+    &__arrow {
+      margin-left: 0.5rem;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &--open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &.confirm {
+    background-color: #9b88df;
+    color: #ffffff;
+    border: none;
+    box-shadow: inset 0 0.2rem 0.2rem rgba(255, 255, 255, 0.2),
+      0 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+
+    &:hover {
+      background-color: #7f62e6;
+    }
+  }
+
+  &.cancel {
+    background-color: #f5f5f5;
+    color: #9b88df;
+    border: 1px solid #9b88df;
+
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+
+  &.toggle {
+    background-color: transparent;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-top: 0 !important;
+    width: auto !important;
+
+    .toggle-password-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
